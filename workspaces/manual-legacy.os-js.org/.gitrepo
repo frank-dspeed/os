@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/manual-legacy.os-js.org
+	branch = main
+	commit = 063a0a9e50e24573a236297f58419c399390f487
+	parent = 7ed2e0b3675f400c0139bbec088e3960068d7fd9
+	method = merge
+	cmdver = 0a31831
