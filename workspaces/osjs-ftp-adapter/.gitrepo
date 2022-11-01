@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-ftp-adapter
+	branch = master
+	commit = befb90093dda4e83abebbbdf9e253cfe8ed5ddd1
+	parent = 9224718d327c73a8b44fdde71433901a155e87a6
+	method = merge
+	cmdver = 0a31831
