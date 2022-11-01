@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-webodf-application
+	branch = master
+	commit = 64c348d802324af86da721be6a4f523049bc9076
+	parent = adc436a4d3cf64461be46abc653b10aa49c7a162
+	method = merge
+	cmdver = 0a31831
