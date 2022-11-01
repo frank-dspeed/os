@@ -1,0 +1,96 @@
+{
+  "name": "@osjs/common",
+  "version": "3.0.12",
+  "description": "OS.js Common Modules",
+  "main": "dist/main.js",
+  "module": "dist/main.js",
+  "typings": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "dist/main.js.map",
+    "dist/main.js",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "eslint": "eslint index.js 'src/**/*.js'",
+    "prepublishOnly": "npm run eslint && rm ./dist/* && NODE_ENV=production npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-common.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "dependencies": {
+    "@osjs/event-emitter": "^1.0.10",
+    "async-dependency-graph": "^1.1.4",
+    "deepmerge": "^4.2.2",
+    "omit-deep": "^0.3.0"
+  },
+  "devDependencies": {
+    "@osjs/dev-meta": "^2.0.0"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-common/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-common#readme",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "babel": {
+    "sourceType": "unambiguous",
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "esdoc": {
+    "source": "./src",
+    "destination": "./doc",
+    "plugins": [
+      {
+        "name": "esdoc-standard-plugin",
+        "option": {
+          "brand": {
+            "title": "OS.js Common API",
+            "description": "OS.js Common API Documentation",
+            "repository": "https://github.com/os-js/osjs-common",
+            "author": "Anders Evenrud <andersevenrud@gmail.com>"
+          },
+          "lint": {
+            "enable": false
+          },
+          "coverage": {
+            "enable": false
+          },
+          "undocumentIdentifier": {
+            "enable": false
+          }
+        }
+      },
+      {
+        "name": "esdoc-publish-html-plugin"
+      },
+      {
+        "name": "./src/esdoc.js"
+      }
+    ]
+  }
+}
