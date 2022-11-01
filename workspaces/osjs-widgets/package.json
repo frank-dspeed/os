@@ -1,0 +1,94 @@
+{
+  "name": "@osjs/widgets",
+  "version": "3.1.0",
+  "description": "OS.js Widgets",
+  "main": "dist/main.js",
+  "module": "dist/main.js",
+  "style": "dist/main.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint index.js 'src/**/*.js'",
+    "stylelint": "stylelint index.scss src/**/*.scss",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "prepublishOnly": "npm run eslint && npm run stylelint && rm ./dist/* && NODE_ENV=production npm run build"
+  },
+  "files": [
+    "dist/main.js",
+    "dist/main.js.map",
+    "dist/main.css",
+    "dist/main.css.map",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-widgets.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "deepmerge": "^4.2.2"
+  },
+  "devDependencies": {
+    "@osjs/dev-meta": "^2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-widgets/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-widgets#readme",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "stylelint": {
+    "extends": "@osjs/stylelint-config"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "esdoc": {
+    "source": "./src",
+    "destination": "./doc",
+    "plugins": [
+      {
+        "name": "esdoc-standard-plugin",
+        "option": {
+          "brand": {
+            "title": "OS.js Widget API",
+            "description": "OS.js Panel API Documentation",
+            "repository": "https://github.com/os-js/osjs-widgets",
+            "author": "Anders Evenrud <andersevenrud@gmail.com>"
+          },
+          "lint": {
+            "enable": false
+          },
+          "coverage": {
+            "enable": false
+          },
+          "undocumentIdentifier": {
+            "enable": false
+          }
+        }
+      },
+      {
+        "name": "esdoc-publish-html-plugin"
+      }
+    ]
+  }
+}
