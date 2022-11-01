@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-xterm-application
+	branch = master
+	commit = ebea296167387b5d6261ceda45c2912e32ac38e8
+	parent = 65909ef8d299ef3cb82ef8345cfcc634752c2f9e
+	method = merge
+	cmdver = 0a31831
