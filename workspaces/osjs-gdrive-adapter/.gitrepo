@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-gdrive-adapter
+	branch = master
+	commit = e50f3f75c58582cccda397e90fca4f0863bd03fa
+	parent = 64884f0a57cf5a5bfd020402a9e4fcfeb26a3f51
+	method = merge
+	cmdver = 0a31831
