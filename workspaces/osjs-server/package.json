@@ -1,0 +1,135 @@
+{
+  "name": "@osjs/server",
+  "version": "3.3.3",
+  "description": "OS.js Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run eslint && npm run jest",
+    "jest": "jest",
+    "coverage": "jest --coverage",
+    "eslint": "eslint index.js src",
+    "prepublishOnly": "npm run test",
+    "prepare": "husky install"
+  },
+  "files": [
+    "src/",
+    "index.js",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-server.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-server/issues"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "homepage": "https://github.com/os-js/osjs-server#readme",
+  "dependencies": {
+    "@osjs/common": "^3.0.12",
+    "body-parser": "^1.19.0",
+    "chokidar": "^3.4.3",
+    "connect-loki": "^1.1.0",
+    "consola": "^2.15.0",
+    "deepmerge": "^4.2.2",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2",
+    "express-session": "^1.17.1",
+    "express-ws": "^4.0.0",
+    "fast-glob": "^2.2.7",
+    "filehound": "^1.17.4",
+    "formidable": "^1.2.2",
+    "fs-extra": "^9.0.1",
+    "mime": "^2.4.6",
+    "minimist": "^1.2.5",
+    "morgan": "^1.10.0",
+    "nocache": "^2.1.0",
+    "sanitize-filename": "^1.6.3",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@osjs/dev-meta": "^2.2.0",
+    "jest-express": "^1.12.0",
+    "temp": "^0.9.4",
+    "husky": "^8.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "esdoc": {
+    "source": "./src",
+    "destination": "./doc",
+    "plugins": [
+      {
+        "name": "esdoc-standard-plugin",
+        "option": {
+          "brand": {
+            "title": "OS.js Server API",
+            "description": "OS.js Server API Documentation",
+            "repository": "https://github.com/os-js/osjs-core",
+            "author": "Anders Evenrud <andersevenrud@gmail.com>"
+          },
+          "lint": {
+            "enable": false
+          },
+          "coverage": {
+            "enable": false
+          },
+          "undocumentIdentifier": {
+            "enable": false
+          }
+        }
+      },
+      {
+        "name": "esdoc-publish-html-plugin"
+      },
+      {
+        "name": "esdoc-ecmascript-proposal-plugin",
+        "option": {
+          "all": true
+        }
+      },
+      {
+        "name": "esdoc-node"
+      }
+    ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ],
+    "moduleNameMapper": {
+      "^osjs$": "<rootDir>/__mocks__/core.js"
+    },
+    "coveragePathIgnorePatterns": [
+      "src/esdoc.js",
+      "src/config.js",
+      "src/providers",
+      "/node_modules/"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
