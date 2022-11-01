@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-wolfenstein3d-application
+	branch = master
+	commit = 582ef6f4ef1a481c1839ce9645bd8630056cf703
+	parent = 66e003a82af00b76907f7c391ba7b9e92cbb55e1
+	method = merge
+	cmdver = 0a31831

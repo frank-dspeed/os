@@ -1,0 +1,17 @@
+{
+  "name": "Wolfenstein",
+  "category": "games",
+  "icon": "./icon.png",
+  "title": {
+    "en_EN": "Wolfenstein 3D",
+    "pt_BR": "Wolfenstein 3D"
+  },
+  "description": {
+    "en_EN": "Wolfenstein 3D HTML5",
+    "pt_BR": "Wolfenstein 3D é um jogo de tiro em primeira pessoa"
+
+  },
+  "files": [
+    "main.js"
+  ]
+}
