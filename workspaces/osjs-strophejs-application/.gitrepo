@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-strophejs-application
+	branch = master
+	commit = 97c2145da7d556adfd3e66c953328d68e9cc243b
+	parent = 55f574ad9ab6908912084372664484789d4cad60
+	method = merge
+	cmdver = 0a31831
