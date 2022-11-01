@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-webdav-adapter
+	branch = master
+	commit = f838e72b2cfc4631700002593329297f9f98326b
+	parent = ca9dfa66bd60a39831516f43511000f0436fa807
+	method = merge
+	cmdver = 0a31831
