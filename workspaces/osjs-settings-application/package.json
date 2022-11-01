@@ -1,0 +1,66 @@
+{
+  "name": "@osjs/settings-application",
+  "version": "1.2.0",
+  "description": "OS.js v3 Settings Application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "stylelint": "stylelint index.scss src/**/*.scss",
+    "prepublishOnly": "npm run eslint && npm run stylelint && rm ./dist/* && NODE_ENV=production npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-settings-package.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "files": [
+    "dist/",
+    "server.js",
+    "metadata.json"
+  ],
+  "dependencies": {
+    "@osjs/gui": "^4.0.30",
+    "deepmerge": "^4.2.2",
+    "hyperapp": "^1.2.10"
+  },
+  "devDependencies": {
+    "@osjs/dev-meta": "^2.1.0"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-settings-package/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-settings-package#readme",
+  "osjs": {
+    "type": "package"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "stylelint": {
+    "extends": "@osjs/stylelint-config"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {}
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  }
+}

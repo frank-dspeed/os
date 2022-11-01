@@ -1,0 +1,24 @@
+{
+  "type": "application",
+  "name": "Settings",
+  "category": "utilities",
+  "singleton": true,
+  "server": null,
+  "title": {
+    "en_EN": "Settings",
+    "nb_NO": "Instillinger",
+    "fr_FR": "Paramètres",
+    "pt_BR": "Configurações",
+    "sv_SE": "Inställningar"
+  },
+  "description": {
+    "en_EN": "Application to configure OS.js",
+    "nb_NO": "Applikasjon for å konfigurere OS.js",
+    "fr_FR": "Paramètres",
+    "pt_BR": "Aplicativo para configurar seu ambiente no OS.js",
+    "sv_SE": "Program för att konfigurera OS.js"
+  },
+  "files": [
+    "main.js"
+  ]
+}
