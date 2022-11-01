@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-example-vue-application
+	branch = master
+	commit = 5cf60dd2910350a6375563ce5a88960ddd62d827
+	parent = 8012da5319e1fc55c983a2d1d5b2aeb0e87f43d6
+	method = merge
+	cmdver = 0a31831
