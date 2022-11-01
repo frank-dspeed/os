@@ -1,0 +1,61 @@
+{
+  "name": "@osjs/standard-theme",
+  "version": "4.0.9",
+  "description": "OS.js v3 Standard Theme",
+  "files": [
+    "dist/",
+    "metadata.json",
+    "CHANGELOG.md",
+    "README.md",
+    "CHANGELOG"
+  ],
+  "scripts": {
+    "test": "npm run eslint && npm run stylelint",
+    "eslint": "eslint index.js",
+    "stylelint": "stylelint index.scss 'src/**/*.scss'",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "prepublishOnly": "npm run test && rm -rf ./dist/* && NODE_ENV=production npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-standard-theme.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@osjs/dev-meta": "^1.0.2"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-standard-theme/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-standard-theme#readme",
+  "osjs": {
+    "type": "package"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "stylelint": {
+    "extends": "@osjs/stylelint-config"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  }
+}
