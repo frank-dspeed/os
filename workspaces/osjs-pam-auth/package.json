@@ -1,0 +1,45 @@
+{
+  "name": "@osjs/pam-auth",
+  "version": "1.2.0",
+  "description": "OS.js v3 PAM authentication provider adapter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-pam-auth.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "dependencies": {
+    "@osjs/event-emitter": "^1.0.6",
+    "fs-extra": "^7.0.1",
+    "node-ipc": "^9.1.1",
+    "node-linux-pam": "0.0.1",
+    "userid": "^1.0.0-beta.6",
+    "uuid": "^3.4.0"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-pam-auth/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-pam-auth#readme",
+  "devDependencies": {
+    "@osjs/eslint-config": "^1.0.2",
+    "eslint": "^5.16.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  }
+}
