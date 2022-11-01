@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-freedesktop-sounds
+	branch = master
+	commit = f0c2cbb4186ddc937adf4b043c9b2722733628de
+	parent = 55d8940e6b0741bf2c0925acc4be4caecbd689bc
+	method = merge
+	cmdver = 0a31831
