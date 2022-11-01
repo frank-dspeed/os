@@ -1,0 +1,17 @@
+{
+  "type": "application",
+  "name": "MyApplication",
+  "icon": "icon.png",
+  "category": null,
+  "server": "server.js",
+  "title": {
+    "en_EN": "My Application"
+  },
+  "description": {
+    "en_EN": "My Application"
+  },
+  "files": [
+    "main.js",
+    "main.css"
+  ]
+}
