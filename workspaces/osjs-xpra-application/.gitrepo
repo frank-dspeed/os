@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-xpra-application
+	branch = master
+	commit = 00bf7af48e4ea72a77f6e936cb946228c0e27786
+	parent = fb304b74a67fd633021f0bc7c0d4635698de9ba1
+	method = merge
+	cmdver = 0a31831
