@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/lerna
+	branch = master
+	commit = 972690ae2af34cf4eba5fdc84550e04ae6d024db
+	parent = aca3d233c70cc573e594f57b8ea1f75fe697e426
+	method = merge
+	cmdver = 0a31831
