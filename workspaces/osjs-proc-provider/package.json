@@ -1,0 +1,59 @@
+{
+  "name": "@osjs/proc-provider",
+  "version": "1.7.3",
+  "description": "OS.js Proc Provider",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint src/*.js",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "prepublishOnly": "npm run eslint && rm ./dist/* && NODE_ENV=production npm run build"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersevenrud/osjs-proc-provider.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andersevenrud/osjs-proc-provider/issues"
+  },
+  "homepage": "https://github.com/andersevenrud/osjs-proc-provider#readme",
+  "devDependencies": {
+    "@osjs/dev-meta": "^1.1.1"
+  },
+  "dependencies": {
+    "@osjs/event-emitter": "^1.0.4",
+    "node-pty": "^0.9.0",
+    "uuid": "^8.2.0",
+    "xterm": "^3.10.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  }
+}
