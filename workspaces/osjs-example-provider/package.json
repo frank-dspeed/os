@@ -1,0 +1,40 @@
+{
+  "name": "@osjs/example-provider",
+  "version": "1.0.3",
+  "description": "OS.js Example Service Provider",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-example-provider.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "dependencies": {},
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-example-provider/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-example-provider#readme",
+  "osjs": {
+    "type": "provider"
+  },
+  "devDependencies": {
+    "@osjs/eslint-config": "^1.0.2",
+    "eslint": "^6.8.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  }
+}
