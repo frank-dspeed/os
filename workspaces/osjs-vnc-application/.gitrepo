@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-vnc-application
+	branch = master
+	commit = 6a91ce2316ea473c433fc23eabfd732080ef62a0
+	parent = f6c26c5b4202946e1edbd5807075aa40389a5bf2
+	method = merge
+	cmdver = 0a31831

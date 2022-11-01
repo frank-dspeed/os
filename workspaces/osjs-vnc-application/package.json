@@ -1,0 +1,59 @@
+{
+  "name": "@osjs/vnc-application",
+  "version": "0.5.6",
+  "description": "OS.js noVNC Client Application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "stylelint": "stylelint index.scss src/**/*.scss",
+    "prepublishOnly": "npm run eslint && rm ./dist/* && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-vnc-application.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "files": [
+    "dist/",
+    "metadata.json"
+  ],
+  "dependencies": {
+    "@novnc/novnc": "^1.0.0",
+    "@osjs/gui": "^4.0.31",
+    "hyperapp": "^1.2.9"
+  },
+  "devDependencies": {
+    "@osjs/dev-meta": "^1.0.3"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-vnc-application/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-vnc-application#readme",
+  "osjs": {
+    "type": "package"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  }
+}
