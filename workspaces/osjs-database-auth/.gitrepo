@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-database-auth
+	branch = master
+	commit = ce5dedd784fa0273389a2196148290c5d277200d
+	parent = 1fa78a9538330fac6d9bdd3785f629876d0ccf0f
+	method = merge
+	cmdver = 0a31831
