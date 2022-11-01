@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-windows8-theme
+	branch = master
+	commit = 55300df08402e7f88b9597b037187c700ee03290
+	parent = 35242e0fbc380b4fd731f67ff9851bb2eb50f446
+	method = merge
+	cmdver = 0a31831
