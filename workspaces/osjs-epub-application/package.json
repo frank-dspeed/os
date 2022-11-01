@@ -1,0 +1,57 @@
+{
+  "name": "@osjs/epub-application",
+  "description": "OS.js ePUB (ebook) Reader Application",
+  "version": "1.0.11",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "prepublishOnly": "npm run eslint && rm ./dist/* && NODE_ENV=production npm run build"
+  },
+  "dependencies": {
+    "@osjs/gui": "^4.0.31",
+    "epubjs": "^0.3.83",
+    "hyperapp": "^1.2.9"
+  },
+  "devDependencies": {
+    "@osjs/dev-meta": "^1.0.3"
+  },
+  "osjs": {
+    "type": "package"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-textpad-application/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-textpad-application#readme",
+  "files": [
+    "dist/",
+    "metadata.json"
+  ],
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {}
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  }
+}
