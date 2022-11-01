@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-musicplayer-application
+	branch = master
+	commit = b48dfc36c968fa606a10edd1231560a324cede25
+	parent = 43eb4df23ff121484faf689bcc6e2f7d34108c9e
+	method = merge
+	cmdver = 0a31831
