@@ -1,0 +1,19 @@
+{
+  "type": "application",
+  "name": "Tetris",
+  "category": "games",
+  "icon": "./icon.png",
+  "title": {
+    "en_EN": "Tetris",
+    "pt_BR": "Tetris",
+    "fr_FR": "Tetris"
+  },
+  "description": {
+    "en_EN": "Tetris",
+    "pt_BR": "Jogue o famoso Tetris",
+    "fr_FR": "Jeux de Tetris"
+  },
+  "files": [
+    "main.js"
+  ]
+}
