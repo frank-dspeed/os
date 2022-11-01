@@ -1,0 +1,40 @@
+{
+  "name": "@osjs/database-settings",
+  "version": "1.0.5",
+  "description": "OS.js database settings storage adapter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-database-settings.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "dependencies": {
+    "typeorm": "^0.2.7"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-database-settings/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-database-settings#readme",
+  "devDependencies": {
+    "@osjs/eslint-config": "^1.0.0",
+    "eslint": "^5.1.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  }
+}
