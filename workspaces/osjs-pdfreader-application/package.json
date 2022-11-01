@@ -1,0 +1,61 @@
+{
+  "name": "@osjs/pdfreader-application",
+  "version": "1.2.0",
+  "description": "OS.js PDF Reader Application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "prepublishOnly": "npm run eslint && rm ./dist/* && NODE_ENV=production npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-pdfreader-application.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "files": [
+    "dist/",
+    "metadata.json"
+  ],
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-pdfreader-application/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-pdfreader-application#readme",
+  "osjs": {
+    "type": "package"
+  },
+  "dependencies": {
+    "@osjs/gui": "^4.0.34",
+    "hyperapp": "^1.2.10",
+    "pdfjs-dist": "^2.4.456"
+  },
+  "devDependencies": {
+    "@osjs/dev-meta": "^2.1.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {}
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  }
+}
