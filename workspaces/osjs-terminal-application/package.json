@@ -1,0 +1,42 @@
+{
+  "name": "@osjs/terminal-application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "stylelint": "stylelint index.scss src/**/*.scss",
+    "prepublishOnly": "npm run eslint && npm run stylelint && rm ./dist/* && npm run build"
+  },
+  "dependencies": {
+    "argv-parse": "^1.0.1",
+    "xterm": "^3.11.0"
+  },
+  "devDependencies": {
+    "@osjs/dev-meta": "^1.0.2"
+  },
+  "osjs": {
+    "type": "package"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {}
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  }
+}
