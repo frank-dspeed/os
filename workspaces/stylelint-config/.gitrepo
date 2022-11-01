@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/stylelint-config
+	branch = master
+	commit = daf45673e7645e09eebaf6abaaa776105c3f07f9
+	parent = bf9ded7be8d3077cec530c699b2b2c5ec91f4c2d
+	method = merge
+	cmdver = 0a31831
