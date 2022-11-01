@@ -1,0 +1,19 @@
+{
+  "type": "icons",
+  "name": "GnomeIcons",
+  "title": {
+    "en_EN": "Gnome Icons",
+    "fr_FR": "Icônes du bureau Gnome",
+    "sl_SI": "Ikone Gnome",
+    "pt_BR": "Ícones Gnome"
+  },
+  "description": {
+    "en_EN": "Gnome Icons",
+    "fr_FR": "Icônes du bureau Gnome",
+    "sl_SI": "Ikone Gnome",
+    "pt_BR": "Ícones Gnome"
+  },
+  "files": [
+    "main.css"
+  ]
+}

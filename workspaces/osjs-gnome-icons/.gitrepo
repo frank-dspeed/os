@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-gnome-icons
+	branch = master
+	commit = fae1dea267768185f04589bd87ad094eb2d96bd3
+	parent = 40577745855e5121fd709e4ceaf8de4b9d572e12
+	method = merge
+	cmdver = 0a31831

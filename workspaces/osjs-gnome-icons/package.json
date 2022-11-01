@@ -1,0 +1,62 @@
+{
+  "name": "@osjs/gnome-icons",
+  "version": "4.0.5",
+  "description": "OS.js v3 Gnome Icons",
+  "files": [
+    "dist/",
+    "metadata.json",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint index.js",
+    "stylelint": "stylelint index.scss src/**/*.scss",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "prepublishOnly": "npm run eslint && npm run stylelint && rm -rf ./dist/* && NODE_ENV=production npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-js/osjs-gnome-icons.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@osjs/dev-meta": "^1.0.2"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/os-js/osjs-gnome-icons/issues"
+  },
+  "homepage": "https://github.com/os-js/osjs-gnome-icons#readme",
+  "osjs": {
+    "type": "package"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 8
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "stylelint": {
+    "extends": "@osjs/stylelint-config"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  }
+}
