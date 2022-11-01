@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/osjs-textpad-application
+	branch = master
+	commit = 238a0f4756fa7b102210836075fea91873d2abce
+	parent = f8c30eb5f7f13aaeacd4a8c8b90168effa532387
+	method = merge
+	cmdver = 0a31831
