@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/os-js/gfx
+	branch = master
+	commit = 2753de6473711fa05da99ea5fd075d33ea110c77
+	parent = 1fced717b2416bd11aa262fa1402a04dffa97266
+	method = merge
+	cmdver = 0a31831
